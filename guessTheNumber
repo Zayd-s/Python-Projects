@@ -1,0 +1,18 @@
+import random #Generate pseudo-random numbers with various common distributions.
+
+def guess(x):
+    random_number = random.randint(1, x)
+    guess = 0
+    while random_number != guess:
+        guess = int(input(f"guess a number between 1 and {x}: "))
+        if guess < random_number:
+            print("too low, guess again!" )
+        elif guess > random_number:
+            print("too high, guess again!")
+
+    print("good job you did it")
+
+guess(10)
+
+
+
