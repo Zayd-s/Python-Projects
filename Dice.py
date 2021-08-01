@@ -2,7 +2,7 @@ import random
 
 def dice():
     diceNumber = random.randint(1,6)
-    print(f"you rolled a {diceNumber} Type Y to roll again")
+    print(f"you rolled a {diceNumber} Type y to roll again")
     if input() == 'y':
         dice()
     else:
